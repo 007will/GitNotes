@@ -1,0 +1,7 @@
+git checkout -b <nome-da-nova-branch>
+git checkout -b master
+git checkout main,
+git push origin master 
+git branch master, 
+git push
+git push --set-upstream origin master

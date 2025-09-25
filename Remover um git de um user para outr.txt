@@ -1,0 +1,11 @@
+Remover um git de um user para outro, de um diretório para outro repositório
+
+rm -rf .git
+git config --global --add safe.directory "C:/All Git Tests/Pasta_GIT"
+
+git init
+git remote add origin https://github.com/007will/Nome.git
+git add .
+git commit -m "primeiro commit"
+git branch -M main
+git push -u origin main

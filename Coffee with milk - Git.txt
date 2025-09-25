@@ -1,0 +1,28 @@
+Coffee with milk - Git
+
+git status
+git add .
+git commit -m "X"
+- Baixar dados/Att Repo Remot
+git checkout master
+git pull origin master
+- Logar criando nova Branch
+git checkout -b <NomeBranch>
+- 
+
+git config --list
+
+git config --global --unset user.name
+git config --global --unset user.email
+
+git config --local --unset user.name
+git config --local --unset user.email
+
+--- Solution erro ---
+warning: user.name has multiple values
+error: cannot overwrite multiple values with a single value
+       Use a regexp, --add or --replace-all to change user.name
+
+$ git config --global user.name "Marcilio Borges" --replace-all
+
+-
