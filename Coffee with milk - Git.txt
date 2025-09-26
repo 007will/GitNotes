@@ -25,4 +25,71 @@ error: cannot overwrite multiple values with a single value
 
 $ git config --global user.name "Marcilio Borges" --replace-all
 
--
+--------------
+
+📌 Guia Rápido de Comandos Git
+🔹 Configuração Inicial
+# Configurar nome e e-mail do usuário (global para todas as pastas)
+git config --global user.name "SeuNome"
+git config --global user.email "seuemail@exemplo.com"
+
+# Configuração local (somente nesse repositório)
+git config user.name "SeuNome"
+git config user.email "seuemail@exemplo.com"
+
+# Corrigir erro de "dubious ownership" (diretório não confiável)
+git config --global --add safe.directory "C:/Caminho/Do/Projeto"
+
+🔹 Criando e Iniciando Repositório
+# Inicia um repositório git na pasta atual
+git init
+
+# Verifica o status (arquivos modificados, pendentes de commit, etc.)
+git status
+
+🔹 Conectar ao GitHub
+# Adiciona o repositório remoto
+git remote add origin https://github.com/Usuario/NomeRepositorio.git
+
+# Remove conexão remota (caso queira trocar o repositório vinculado)
+git remote remove origin
+
+# Verifica repositórios remotos configurados
+git remote -v
+
+🔹 Trabalhando com Arquivos
+# Adiciona todos os arquivos ao stage
+git add .
+
+# Adiciona um arquivo específico
+git add nome_arquivo.ext
+
+# Remove arquivos do repositório (e do sistema)
+git rm -r nome_pasta
+git rm nome_arquivo.ext
+
+🔹 Commits
+# Criar commit com mensagem
+git commit -m "mensagem do commit"
+
+🔹 Branches
+# Renomeia branch atual para "main"
+git branch -M main
+
+# Lista branches locais
+git branch
+
+🔹 Enviando para o GitHub
+# Primeiro push (define branch remota)
+git push -u origin main
+
+# Push normal após configurado
+git push
+
+🔹 Baixando do GitHub
+# Puxa alterações do repositório remoto
+git pull
+
+🔹 Apagando/Reconfigurando Git Local
+# Remove completamente o repositório git da pasta
+rm -rf .git
