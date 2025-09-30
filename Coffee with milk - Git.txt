@@ -93,3 +93,12 @@ git pull
 🔹 Apagando/Reconfigurando Git Local
 # Remove completamente o repositório git da pasta
 rm -rf .git
+
+--------------------------
+Puxar as alterações do remoto antes de dar push / Usar para Push Rejected!.
+
+git pull origin master --rebase
+git push origin master
+
+Forçar o push (⚠️ sobrescreve o remoto)
+git push origin master --force
